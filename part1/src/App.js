@@ -1,23 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Hello = (props) => {
-  return (
-    <div>
-      <p>
-        Hello {props.name}, you are {props.age} years old
-      </p>
-    </div>
-  );
-};
+const Display = ({ counter }) => <div>{counter}</div>;
+
+const Button = ({ onClick, text }) => <button onClick={onClick}>{text}</button>;
 
 const App = () => {
-  const name = 'George';
-  const age = 40;
+  const [counter, setCounter] = useState(0);
+
+  const increaseByOne = () => setCounter(counter + 1);
+  const decreaseByOne = () => setCounter(counter - 1);
+  const setToZeto = () => setCounter(0);
+
   return (
     <div>
-      <h1>Greetings</h1>
-      <Hello name="Lora" age={40 - 20} />
-      <Hello name={name} age={age} />
+      <Display counter={counter} />
+      <Button onClick={increaseByOne} text="plus" />
+      <Button onClick={setToZeto} text="zero" />
+      <Button onClick={decreaseByOne} text="minus" />
     </div>
   );
 };
