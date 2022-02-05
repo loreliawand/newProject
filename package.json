@@ -4,7 +4,9 @@
   "description": "Project for learning fullstack with React and Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \\Error: no test specified && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/loreliawand/newProject/issues"
   },
-  "homepage": "https://github.com/loreliawand/newProject#readme"
+  "homepage": "https://github.com/loreliawand/newProject#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
