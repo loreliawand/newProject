@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Project for learning fullstack with React and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\Error: no test specified && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loreliawand/newProject.git"
+  },
+  "author": "Matti Luukkainen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loreliawand/newProject/issues"
+  },
+  "homepage": "https://github.com/loreliawand/newProject#readme"
+}
