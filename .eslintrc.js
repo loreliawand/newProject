@@ -19,5 +19,17 @@ module.exports = {
     'object-curly-spacing': ['error', 'always'],
     'arrow-spacing': ['error', { before: true, after: true }],
     'no-console': 0,
+    'import/no-anonymous-default-export': [
+      'off',
+      {
+        allowArray: true,
+        allowArrowFunction: true,
+        allowAnonymousClass: true,
+        allowAnonymousFunction: true,
+        allowCallExpression: true, // The true value here is for backward compatibility
+        allowLiteral: true,
+        allowObject: true,
+      },
+    ],
   },
 };
